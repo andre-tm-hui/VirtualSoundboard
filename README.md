@@ -5,7 +5,9 @@ It uses a keyboard hook to register key events, and assigns audio events to a se
 
 Usage:
 Build in Visual Studio 22 and run. Currently, hotkeys are assigned to numbers. This can be changed by changing line 81 in BackgroundManager.cpp. For example, to use the NUMPAD keys:
+
       for (int i = 0x60; i < 0x6A; i++) {
+      
 To record, press and hold a key, and release to stop recording. If there is audio recorded to the key already, press Alt+key to start re-recording.
 To play, once audio has been recorded to a key, press the key to playback the audio.
 
